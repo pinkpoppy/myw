@@ -1,0 +1,1281 @@
+ 媒体查询 开始*/
+@media screen and (max-width:299px) {
+	body,textarea,input,button,select {font-size:10px;}
+}
+@media screen and (min-width:300px) and (max-width:479px) {
+	body,textarea,input,button,select {font-size:12px;}
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+	body,textarea,input,button,select {font-size:16px;}
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+	body,textarea,input,button,select {font-size:20px;}
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+	body,textarea,input,button,select {font-size:24px;}
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+	body,textarea,input,button,select {font-size:28px;}
+}
+@media screen and (min-width:1600px) and (max-width:1919px) {
+	body,textarea,input,button,select {font-size:32px;}
+}
+@media screen and (min-width:1920px) {
+	body,textarea,input,button,select {font-size:36px;}
+}
+
+body {
+	background-image: url('../icon/loginAndRegister/bg.png');
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+#register_body {
+	overflow: scroll;
+}
+#login_body {
+	overflow:scroll;
+}
+/*全局样式 开始*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #c9c9c9;
+	background: #ffffff;
+	color: #969696;
+	position: relative;
+	text-align: center;
+}
+
+table th,td {
+	border: 1px solid #c9c9c9;
+}
+
+.inner_body{
+	background: #e6e6e6;
+	overflow-y:scroll;
+	font-size: 14px;
+	margin: 32px;
+	position: relative;
+}
+tr{
+	height: 38px;
+	font-size: 14px;
+}
+table .level1 {
+	height: 58px;
+	font-size: 18px;
+}
+table .level2 {
+	height: 44px;
+	font-size: 14px;
+}
+input {
+	padding: 0;
+	border: 0;
+	background: #ffffff;
+	padding-left: 0.5em;
+}
+
+tbody {
+	text-align: center;
+}
+.channel {
+	font-weight: normal;
+}
+/*全局样式 结束*/
+
+
+/*登陆模块 开始*/
+
+.content {
+	width: 478px;
+	height: 504px;
+	margin: auto;
+	background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px #e5e5e5;
+}
+
+.logo {
+	width: 478px;
+	text-align: center;
+	width: 478px;
+	margin: 130px auto 46px;
+}
+
+.logo img {
+	width: inherit;
+	height: 64px;
+}
+
+.login_box {
+	width: 414px;
+	margin: 0 auto;
+}
+.login_title{
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin: 66px auto 54px;
+	color: #333333;
+}
+
+.login_box .login_bg {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
+}
+
+#login_n {
+	background-image: url(../icon/loginAndRegister/user.png);
+}
+#login_p {
+	background-image: url(../icon/loginAndRegister/password.png);
+}
+.login_main {
+	width: 416px;
+	text-align: center;
+	position: relative;
+}
+
+.login_main .login_item {
+	height: 44px;
+    margin-top: 20px;
+    width: 416px;
+	border: 1px solid #cbcbcb;
+}
+
+.login_main input{
+	width: 370px;
+	outline: 0px;
+	float: left;
+	height: 42px;
+	color:#555555;
+	border: none;
+	padding-left: 5px;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+
+.login_action .checkbox{
+	width: 416px;
+	height: 44px;
+	position: relative;
+}
+.login_action #remember{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.login_action #remember_p{
+	letter-spacing: 1px;
+	position: absolute;
+	left: 30px;
+	top: 20px;
+	color: #3468af;
+	font-size: 12px;
+}
+.login_action .forget_p{
+	position: absolute;
+	right: -2px;
+	top: 20px;
+	width: 60px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #929aa8;
+	letter-spacing: 1px;
+}
+.login_action .reset_p {
+	width: 416px;
+	text-align: center;
+	display: inline-block;
+	color: red;
+	font-size: 0.5em;
+}
+.login_action .login_now{
+	display: inline;
+	width:160px;
+	height: 44px;
+	background: #b6002a;
+	color: #ffffff;
+	margin-left: 129px;
+	margin-right: 129px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border:none;
+	margin-top: 68px;
+}
+
+.login_action #login_r{
+	display: inline-block;
+	margin-top: 26px;
+	margin-bottom: 48px;
+	width: 416px;
+	text-align: center;
+	color: #929aa8;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+/*登陆模块 结束*/
+
+/*注册模块 开始*/
+.reg_logo {
+	margin: 0 auto;
+	margin-top: 100px;
+	width:1130px;
+	text-align: center;
+}
+.reg_logo img{
+	margin: 0 auto;
+	margin-top: 182px;
+	margin-bottom: 75px;
+}
+
+.reg_content {
+	width: 904px;
+	margin: 0 auto;
+	background-color: #F9F9F9;
+ 	border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.reg_tip {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-top: 1em;
+}
+.reg_content .reg_tip {
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.reg_content .first {
+	margin-top: 56px;
+}
+.reg_content .reg_item{
+	margin-bottom: 10px;
+}
+#reg_submit:hover {
+	background: transparent;
+	border: 1px solid red;
+	color: black;
+}
+#login_now:hover {
+	background: transparent;
+	border: 1px solid red;
+	color: black;
+}
+.reg_content .icon {
+	margin-left: 126px;
+	margin-right: 68px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.reg_content .login_name {
+	background-image: url("../icon/loginAndRegister/user.png");
+}
+.reg_content .password {
+	background-image: url("../icon/loginAndRegister/password.png");
+}
+.reg_content .confirm_password {
+	background-image: url("../icon/loginAndRegister/password.png");
+}
+.reg_content .company_name {
+	background-image: url("../icon/loginAndRegister/company_name.png");
+}
+.reg_content .contact_person {
+	background-image: url("../icon/loginAndRegister/contact_person.png");
+}
+.reg_content .contact_phone {
+	background-image: url("../icon/loginAndRegister/contact_phone.png");
+}
+.reg_content .contact_mail {
+	background-image: url("../icon/loginAndRegister/contact_mail.png");
+}
+.reg_content .contact_address {
+	background-image: url("../icon/loginAndRegister/contact_address.png");
+}
+.reg_content .reg_submit {
+	width: 160px;
+	height: 44px;
+	background: #b6002a;
+	color: white;
+	display: block;
+	margin-left: 369px;
+	margin-top: 110px;
+	margin-bottom: 28px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+.reg_content input {
+	float: left;
+	width: 450px;
+	height: 44px;
+	color: #555555;
+	font-size: 13px;
+	padding-left: 0.5em;
+}
+.reg_content .reg_login{
+	color: #929aa8;
+	font-size: 12px;
+	text-decoration:none;
+	margin-left: 396px;
+	letter-spacing: 1px;
+}
+.reg_item .ok {
+	width: 16px;
+	height: 16px;
+	background: url(../icon/loginAndRegister/ok.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: inline-block;
+	z-index: -123;
+	position: absolute;
+	top: 14px;
+	left: 684px;
+}
+
+.reg_item {
+	position: relative;
+}
+.reg_item #name_ok{
+
+}
+
+.reg_item #password_ok{
+	position: absolute;
+
+}
+
+.reg_item #confirm_ok{
+
+}
+
+.reg_item #company_ok{
+
+}
+
+.reg_item #person_ok{
+
+}
+
+.reg_item #phone_ok{
+
+}
+
+.reg_item #mail_ok{
+
+}
+
+.reg_item #address_ok{
+
+}
+
+
+
+#login_r:hover {
+	color: red;
+}
+
+.reg_item #reg_login:hover{
+	color: red;
+}
+.reg_item .right_span{
+	display: inline-block;
+	width: 215px;
+	padding: 0 5px;
+	height: 44px;
+	font-size: 10px;
+	color: red;
+	border: none;
+	outline: none;
+}
+/*.reg_item span{
+	color: red;
+	font-size: 0.5em;
+	display: inline-block;
+}*/
+/*注册模块 结束*/
+
+/*酒商主界面*/
+/* 开始*/
+
+.main {
+	margin-left:200px;
+	min-width: 550px;
+	height: 100%;
+	min-height: 800px;
+	background: #eeeeee;
+}
+.main .header_wrap {
+	width: inherit;
+	position: relative;
+}
+.main .header{
+	min-width: 500px;
+	min-height: 40px;
+	width: 100%;
+	height: 60px;
+	background:#ffffff;
+	color: #969696;
+	position: relative;
+	/*position: absolute;*/
+	z-index: 1000;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.main .header .left{
+	position: absolute;
+	left: 0;
+	top: 10px;
+	line-height: 20px;
+	height: 20px;
+	padding-left: 20px;
+}
+.main .header .right{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 0.6em;
+	line-height: 20px;
+	height: 20px;
+	color: #999999;
+}
+
+.right .logout {
+	display: block;
+}
+
+/*酒商主界面 结束
+
+
+/*left_panel 开始*/
+.left_panel {
+	width: 200px;
+	height: 100%;
+	min-height: 800px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #2E363F;
+}
+.left_panel a {
+	text-decoration: none;
+}
+.left_panel .back_home{
+	height: 60px;
+	background: #ce2c3c;
+	text-align: center;
+}
+
+.back_home>a{
+	height: 60px;
+	display: block;
+}
+.left_panel .brand_logo {
+	width: 30px;
+	display: inline;
+	margin-top:15px;
+}
+.left_panel .barnd_title {
+	font-size: 15px;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+.left_panel .nivigatior_panel {
+	margin-top: 50px;
+	text-align: center;
+}
+.left_panel .nivigatior_panel li a{
+	letter-spacing: 1px;
+	border-bottom: 1px solid #1F262D;
+  	border-top: 1px solid #37414B;
+	font-size: 16px;
+	color: #939DA8;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 44px;
+}
+.nivigatior_panel .item{
+	margin-top: 14px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.main .operate_button {
+	border: 1px solid red;
+	color: red;
+	font-size: 14px;
+}
+
+
+/*left_panel 结束*/
+
+/*main 开始*/
+.homepage {
+	background: #e6e6e6;
+}
+.main .content {
+	width: inherit;
+	height: 100%;
+	position: relative;
+}
+.iframe {
+	width:100%;
+	height: 100%;
+	min-height: 1000px
+}
+/*main 结束*/
+
+/*底部 开始*/
+.bottom {
+	text-align: center;;
+	font-family: arial;
+	width: 100%;
+	height: 44px;
+	/*position: fixed;*/
+	letter-spacing: 1px;
+	left: 0;
+	bottom: 0;
+	background: #2c353a;
+	font-size: 13px;
+	text-align: center;
+	color: #636363;
+}
+/*底部 结束*/
+
+
+
+
+iframe::webkit-scrollbar {
+	display: none;
+}
+
+
+/*添加酒款页面 开始*/
+.add_wine_frame {
+	position: absolute;
+	left:0px;
+	top: 0px;
+	height: 100%;
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.add_wine_frame .form_wrap {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.add_wine_wrap {
+	background-color: #e6e6e6;
+	left:0px;
+	top: 0px;
+	height: 100%;
+    width: 100%;
+}
+.add_wine_wrap .add_wine_button {
+	background-color: transparent;
+	width: 90px;
+	height: 30px;
+	color: black;
+	font-size: 1em;
+	padding: 0;
+	float: right;
+}
+.add_wine_wrap .photo_wrap {
+	font-size: 14px;
+}
+
+.photo_wrap .wrap_cont {
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap_cont .left {
+	float: left;
+}
+.wrap_cont .right {
+	position: relative;
+	overflow: hidden;
+}
+.right .cover_file_input {
+	position: absolute;
+	left: 160px;
+	width: 120px;
+	height: 30px;
+	background-color: #50c1e9;
+}
+.cover_file_input input {
+	position: absolute;
+	background: transparent;
+	opacity: 0;
+	width: 120px;
+	height: 30px;
+	top: 0;
+	background-color: transparent;
+	color: transparent;
+}
+
+.cover_file_input .button_icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-image: url("../icon/wineRelative/add_pic.png");
+	background-color: #40b2da;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.cover_file_input .input_title {
+	margin-top: 8px;
+	position: absolute;
+	left: 32px;
+}
+#result {
+	display: block;
+	margin-top: 40px;
+	margin-left: 160px;
+}
+
+.add_wine_wrap .form_wrap {
+	position: relative;
+	
+}
+
+.form_wrap form{
+	width: 100%;
+}
+
+.form_wrap tbody{
+	font-size: 0.5em;
+}
+.form_wrap tbody .title{
+	padding-right: 0.5em;
+	text-align: right;
+}
+.form_wrap tbody .input_content{
+	border: none;
+	padding-left: 0.5em;
+	text-align: left;
+}
+.form_wrap thead ,tfoot{
+	font-size: 0.6em;
+	background-color: #ffffff;
+}
+
+
+
+/* 酒款基本信息 开始*/
+#wine_table input {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	color: #5d6f78;
+}
+#wine_table .title {
+	width: 20%;
+}
+#wine_table .title_content {
+	width: auto;
+}
+#wine_table .title_content .input_content {
+	width: 100%;
+}
+#wine_table input {
+	padding: 2px;
+	background: #ffffff;
+	color: #5d6f78;
+	font-size: 14px;
+	font-weight: normal;
+}
+#wine_table .basic_info {
+	height: inherit;
+}
+.basic_info .wine_info_icon {
+	background-image: url(../icon/wineRelative/basic_info.png);
+	float: left;
+	padding: 20px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.basic_info .info {
+	float: left;
+	margin-top:11px;
+}
+
+#select-year {
+	text-align: left;
+}
+#select {
+	color: #5d6f78;
+	font-size: 14px;
+	background-color: #fff;
+}
+/* 酒款基本信息 结束*/
+
+
+
+
+
+/* 线上渠道 table 开始 */
+.chanel{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: inherit;
+}
+
+.operate_icon {
+	width: 29px;
+	height: 28px;
+	border: none;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;*/
+}
+.far_left .add_icon {
+	background-image: url(../icon/wineRelative/add.png);
+}
+.not_left .delete_icon {
+	background-image: url(../icon/wineRelative/delete_seller.png);
+}
+#online_website_table .button_wrap {
+	display: inline;
+	float: left;
+	overflow: hidden;
+	width: 120px;
+	height: 30px;
+	position: relative;
+	margin-top: 5px;
+	border: 1px solid #d1d1d1;
+}
+#online_website_table .not_left {
+	margin-left: 18px;
+}
+
+#online input{
+	font-size: 14px;
+	color: #5d6f78;
+	height: 100%;
+}
+
+.section_header {
+	height: 58px;
+}
+
+
+.section_icon {
+	width: 30px;
+	height: 30px;
+	padding: 20px 0;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.chanel .online_icon {
+	background-image: url(../icon/wineRelative/online.png);
+}
+.chanel .offline_icon {
+	background-image: url(../icon/wineRelative/offline.png);
+}
+.chanel .offline_title {
+	float: left;
+	margin-top: 11px;
+}
+#online_website_table .online_data_td {
+	width: 5%;
+}
+#online_website_table .ebusiness_name_td {
+	width: 25%;
+}
+
+#online_website_table .buy_link_td {
+	width: 70%;
+}
+#online_website_table tbody input {
+	width: 100%;
+}
+
+/* 线上渠道 table 结束 */
+
+
+
+/*线下渠道 table 开始*/
+#offline_seller_address tbody input {
+	width: 100%;
+	height: 100%;
+	color: #5d6f78;
+	font-size: 14px;
+}
+
+.inline_button {
+	
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	float: left;
+	border: 1px solid #d1d1d1;
+	margin-top: 5px;
+}
+.far_left .choose_icon {
+	background-image: url(../icon/wineRelative/choose_seller.png);
+}
+.not_left .add_icon {
+	background-image: url(../icon/wineRelative/add.png);
+}
+.not_left .delete_icon {
+	background-image: url(../icon/wineRelative/delete_seller.png);
+}
+.not_left {
+	margin-left: 18px;
+}
+.far_left {
+	/*margin-left: 120px;*/
+}
+#offline .offline_data_td {
+	width: 5%;
+}
+#offline .shop {
+	width: 15%;
+}
+#offline .city {
+	width: 10%
+}
+#offline .phone {
+	width: 10%;
+}
+#offline .address {
+	width: 60%;
+}
+/*线下渠道 table 结束*/
+
+
+/*图片区域 开始*/
+#wine_pic {
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	background-color: red;
+	text-align: center;
+	font-size: 0.5em;
+}
+.add_pic_tip {
+	width: 100%;
+}
+/*图片区域 结束*/
+
+
+.add_wine_footer {
+	width: 100%;
+	position: relative;
+	height: 60px;
+	text-align: center;
+	margin-bottom: 2em;
+	background-color: #ffffff;
+	border: 1px solid #c9c9c9;
+}
+
+.add_wine_footer .button_wrap {
+	width: 120px;
+	height: 30px;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.add_wine_footer .submit {
+	background-color: #50c1e9;
+	margin-right: 100px;
+}
+
+.add_wine_footer .cancle {
+	background-color: #fb6e52;
+	margin-left: 100px;
+}
+
+#offline_seller_address {
+	/*padding-bottom: 100px;*/
+}
+.add_wine_footer .add_wine_button {
+	/*margin-top: 70px;*/
+	/*position: ;*/
+	/*bottom: 0;*/
+	/*position: absolute;*/
+	/*margin-top: 10px;*/
+	background-color: transparent;
+	width: 90px;
+	height: 30px;
+	color: black;
+	font-size: 1em;
+	padding: 0;
+}
+
+.add_wine_footer .button_wrap .button_l_icon {
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.add_wine_footer .button_wrap .submit_icon {
+	background-image: url("../icon/wineRelative/submit.png");
+	background-color: #40b2da;
+}
+
+.add_wine_footer .button_wrap .cancle_icon {
+	background-image: url("../icon/wineRelative/cancle.png");
+	background-color: #e95e43;
+}
+
+.form_wrap .inner_button {
+	padding: 0;
+	font-size: 14px;
+	color: #333333;
+	width: 89px;
+	height: 28px;
+	background-color: #f3f3f3;
+	float: right;
+	border: none;
+}
+
+.add_offline_button {
+	color: white;
+	width:200px;
+	height: 40px;
+	background-color: green;
+}
+
+.add_wine_wrap .add_wine_button {
+
+}
+.address_wrap {
+	overflow:scroll;
+	width: 100%;
+	position: absolute;
+	display: none;
+	left: 0px;
+	top: 200px;
+	background-color: #e6e6e6;
+	z-index: 10;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+
+}
+.wrap_address_wrap {
+	text-align: center;
+}
+.address_wrap .submit{
+	margin-right: 100px;
+}
+
+.address_wrap .cancle{
+	margin-left: 100px;
+}
+
+.address_wrap .button_wrap {
+	display: inline-block;
+	overflow: hidden;
+	width: 120px;
+	height: 30px;
+	position: relative;
+	margin-top: 5px;
+	border: 1px solid #d1d1d1;
+}
+#choose_offline_address {
+	border: none;
+	background-color: #e6e6e6;
+}
+#thumb {
+	width: 100px;
+	background-image: url(../icon/wineRelative/no_image.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+
+/*添加酒款页面 结束*/
+
+
+
+/*酒款管理 开始*/
+#state_select {
+	font-size: 14px;
+	height: 30px;
+}
+.choose_state{
+	color: black;
+}
+.choose_state a{
+	text-decoration: none;
+}
+
+.li_items .nav_icon {
+	width: 14px;
+	height: 14px;
+	display: inline;
+	margin-right: 10px;
+}
+
+#manage_wine_body .wine_info_wrap {
+	position: relative;
+	margin: auto 32px;
+}
+
+#manage_wine_body #state_select {
+	display: inline;
+	float: left;
+}
+.choose_state .operate {
+	display: inline;
+	float: right;
+	width: 120px;
+	height: 30px;
+	background: #6ec8ac;
+}
+.choose_state .operate .cup{
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-image: url("../icon/wineRelative/cup.png");
+	background-color: #64b197;
+	background-repeat: no-repeat;
+	background-position: center;
+} 
+#add_wine {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 8.6px;;
+	margin-left: 7px;
+	position: absolute}
+
+.page_wrap {
+	float: right;
+	font-size: 10px;
+}
+
+#wine_infos #delete_wine_infos {
+	display: inline;
+}
+
+#wine_infos_body .wine_delete {
+	width: 10px;
+}
+#wine_infos_body .wine_num {
+	width: 50px;
+}
+#wine_infos_body .zh_name{
+	width: 100px;
+}
+#wine_infos_body .en_name{
+	width: 150px;
+}
+#wine_infos_body .year{
+	width: 30px;
+}
+#wine_infos_body .price{
+	width: 40px;
+}
+#wine_infos_body .edit{
+	width: 20px;
+}
+#wine_infos_body .state{
+	width: 30px;
+}
+#wine_infos_body .update_time{
+	width: 50px;
+}
+
+.update_wine_button {
+	background: none;
+	border: none;
+	font-size: 14px;
+}
+/*酒款管理结束*/
+
+
+
+/*线下地址管理 开始*/
+.manage_offline_wrap {
+	width: 100%;
+}
+
+.add_offline {
+	display: inline-block;
+    overflow: hidden;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    margin-top: 5px;
+    border: 1px solid #d1d1d1;
+}
+#add_offline {
+	border: 1px;
+	font-size: 12px;
+	width: 120px;
+	height: 30px;
+}
+
+#offline_infos {
+	position: relative;
+	text-align: center;
+}
+#offline_infos th{
+	font-weight: normal;
+	font-size: 0.7em;
+}
+#offline_infos_body td{
+	font-size: 0.7em;
+	font-weight: normal;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#offline_infos_body .checkbox_td{
+	width: 2%;
+}
+#offline_infos_body .shop_td{
+	width: 12%;
+}
+#offline_infos_body .city_td{
+	width: 10%;
+}
+#offline_infos_body .address_td{
+	width:30%;
+}
+#offline_infos_body .phone_td{
+	width: 8%;
+}
+#offline_infos_body .wine_num_td{
+	width: 8%;
+}
+#offline_infos_body .time_td{
+	width: 20%;
+}
+#offline_infos_body .operate_td{
+	width: 5%;
+}
+#offline_infos_body .state_td{
+	width: 12%;
+}
+#offline_infos_body input {
+	width: 100%;
+	font-size: 0.7em;
+	height: 100%;
+}
+
+#offline_wrap {
+	background-color: red;
+}
+/*线下地址管理 结束*/
+
+
+/*消息中心 开始*/
+#notify {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	top: 5px;
+	right: 45px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: red;
+	display: none;
+}
+#notifications_tbody {
+	font-size: 12px;
+}
+#notifications_tbody .content_td{
+	width: auto;
+}
+
+#notifications_tbody .timeTd {
+	width: 200px;
+}
+#notifications_tbody td{
+	border: 0px;
+}
+#notifications_tbody tr {
+	border: 1px solid #c9c9c9;
+}
+
+.time_Td .time_td {
+	padding-right: 10px;
+	float: right;
+}
+
+
+.not_read{
+	color: #333333;
+}
+
+.had_read{
+	color: #999999;
+}
+
+#notifications_tbody .detail_button {
+
+}
+
+.cover_div {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(1,1,1,0);
+}
+
+.span_wrap_div {
+}
+.span_wrap_div img {
+	display: inline;
+}
+
+
+#notifications_tbody td {
+	padding: 0 10px;
+}
+.span_wrap_div .margin_right {
+	float: left;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+#notifications_tbody .notify_time {
+	float: right;
+}
+/*消息中心 结束*/

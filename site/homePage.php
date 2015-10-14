@@ -160,7 +160,6 @@
 			})
 			.fail(function() {
 				console.log("error");
-				alert("fff");
 			})
 			.always(function() {
 				console.log("complete");

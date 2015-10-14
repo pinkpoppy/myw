@@ -4,12 +4,12 @@
 	$username = "root";	
 
 	// $password = "73YX0DtF";
-	// $password = "000000";
+	$password = "000000";
 	// $password = "";
 	// $port = 3307;
 	// $password = "1qaz2wsx";
 
-	$password = "fQHvxT6ytETyAa9R";
+	//$password = "fQHvxT6ytETyAa9R";
 	$db = "winesite";
 	// $conn = new mysqli($servername, $username, $password, $db,$port);
 	$conn = new mysqli($servername, $username, $password, $db);

@@ -48,7 +48,7 @@
 		</table>
 		<div class="page_wrap">
 			<span id="prev_page">上一页</span><span>
-				<input style="width:30px;" id="current_page" type="text" name="large_page" value="1">
+				<input id="current_page" type="text" name="large_page" value="1">
 			</span>
 			<span> / </span>
 			<span id="page_num">x</span>

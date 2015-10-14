@@ -45,14 +45,14 @@ function fetchNotifications(currentPage) {
 					var img = $("<img class='margin_right' src='../icon/notification/had_read.png'>");
 					var tr = $("<tr class='had_read' data-id="+notificationsArr[i]['id']+"></tr>");
 				}
-				var titleSpan = $("<span class='light_span margin_right'>编号为 </span>");
+				var titleSpan = $("<span class='light_span line_height'>编号为</span>");
 				
-				var idSpan = $("<span class='id_span margin_right'>"+notificationsArr[i]['content_id']+"</span>");
+				var idSpan = $("<span class='id_span line_height'>"+notificationsArr[i]['content_id']+"</span>");
 				
 				if (notificationsArr[i]['content_type']==1) {
-					var typeSpan = $("<span class='type_span margin_right'> 的线下地址</span>");
+					var typeSpan = $("<span class='type_span line_height'>的线下地址</span>");
 				} else {
-					var typeSpan = $("<span class='type_span margin_right'> 的酒款</span>");
+					var typeSpan = $("<span class='type_span line_height'>的酒款</span>");
 				}
 
 				var timeSpan = $("<span class='notify_time'>"+getShortTime(notificationsArr[i]['create_time'])+"</span>");
@@ -60,11 +60,11 @@ function fetchNotifications(currentPage) {
 				var timeTd = $("<td class='time_td'></td>")
 
 				if (notificationsArr[i]['pass_flag']==1) {
-					var resultSpan = $("<span class='margin_right'>审核失败</span>");
-					var detailButton = $("<span class='detail_button failed_button margin_right'>失败原因</span>");
+					var resultSpan = $("<span class='line_height'>审核失败</span>");
+					var detailButton = $("<span class='detail_button failed_button line_height'>失败原因</span>");
 				} else {
-					var resultSpan = $("<span class='margin_right'>审核通过</span>");
-					var detailButton = $("<span class='detail_button successed_button margin_right'>查看详情</span>");
+					var resultSpan = $("<span class='line_height'>审核通过</span>");
+					var detailButton = $("<span class='detail_button successed_button line_height'>查看详情</span>");
 				}
 
 				spanWrap.append(img);
@@ -87,7 +87,6 @@ function fetchNotifications(currentPage) {
 			$('.detail_button').click(function(event){
 
 				var notification_id = $(this).parents('tr').data('id');
-
 				$.ajax({
 					url: 'change_notification_state.php',
 					type: 'POST',
